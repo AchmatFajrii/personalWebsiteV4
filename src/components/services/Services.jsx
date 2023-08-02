@@ -53,7 +53,7 @@ const Services = () => {
                 <h3 className="services__title">{title}</h3>
                 <p className="services__description">{description}</p>
 
-                <div className="home__btns">
+                <div className="home__btns" style={{zIndex: '10'}}>
                   <a href="" className="btn text-cs">
                   <span><span><BsChatDots/></span> Get in Touch</span>
                   </a>
