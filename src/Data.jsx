@@ -44,18 +44,6 @@ export const links = [
     path: "resume",
   },
   {
-    name: "Testimonials",
-    path: "testimonial",
-  },
-  {
-    name: "Pricing",
-    path: "pricing",
-  },
-  {
-    name: "Blog",
-    path: "blog",
-  },
-  {
     name: "Contact",
     path: "contact",
   },
