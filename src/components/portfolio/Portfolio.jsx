@@ -1,5 +1,5 @@
 import List from "./List";
-import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import {  FaGithub } from "react-icons/fa";
 import Items from "./Items";
 import shapeOne from "../../assets/shape-1.png";
 import { projects } from "../../Data";
@@ -58,28 +58,30 @@ const Portfolio = () => {
           </AnimatePresence>
         </div>
 
-        {projectItems.length > 3 &&
-          !showAll && ( // Tampilkan tombol "Show more" jika ada lebih dari 3 proyek dan belum menampilkan semua proyek
-            <div className="btn-show">
-              <button className="btn" onClick={handleShowMore}>
-                Show more
-              </button>
-            </div>
-          )}
+        {projectItems.length > 3 && !showAll && (
+          <div className="btn-show">
+            <button className="btn" onClick={handleShowMore}>
+              Show more
+            </button>
+          </div>
+        )}
 
-        {projectItems.length > 3 &&
-          showAll && ( // Tampilkan tombol "Show more" jika ada lebih dari 3 proyek dan belum menampilkan semua proyek
-            <div className="btn-show">
-              <button className="btn" onClick={handleShowLess}>
-                Show less
-              </button>
-            </div>
-          )}
+        {projectItems.length > 3 && showAll && (
+          <div className="btn-show">
+            <button className="btn" onClick={handleShowLess}>
+              Show less
+            </button>
+          </div>
+        )}
 
         {projectItems.length > 3 && showAll && (
           <div className="github">
             <span className="or">OR</span>
-            <a className="link__github" target="__blank" href="https://github.com/AchmatFajrii">
+            <a
+              className="link__github"
+              target="__blank"
+              href="https://github.com/AchmatFajrii"
+            >
               <FaGithub /> See more on Github
             </a>
           </div>

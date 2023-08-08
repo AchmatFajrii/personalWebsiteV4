@@ -4,7 +4,7 @@ import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
 
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import CV from "../../assets/CVATS-Fajri.pdf";
+import CV from "../../assets/cvats.pdf";
 import "./home.css";
 // import { useState } from "react";
 
@@ -64,13 +64,25 @@ const Home = () => {
             </p>
 
             <div className="home__socials">
-              <a href="https://github.com/AchmatFajrii" target="__blank" className="home__social-link">
+              <a
+                href="https://github.com/AchmatFajrii"
+                target="__blank"
+                className="home__social-link"
+              >
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/achmat-fajri/" target="__blank" className="home__social-link">
+              <a
+                href="https://www.linkedin.com/in/achmat-fajri/"
+                target="__blank"
+                className="home__social-link"
+              >
                 <FaLinkedinIn />
               </a>
-              <a href="https://instagram.com/achmdfajrii?igshid=MjEwN2IyYWYwYw==" target="__blank" className="home__social-link">
+              <a
+                href="https://instagram.com/achmdfajrii?igshid=MjEwN2IyYWYwYw=="
+                target="__blank"
+                className="home__social-link"
+              >
                 <FaInstagram />
               </a>
             </div>

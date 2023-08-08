@@ -1,13 +1,12 @@
-import VouchifyApp from "./assets/1.jpg"
-import ARPorang from "./assets/AR.jpg"
-import PremApps from "./assets/15.jpg"
-import Koskuy from "./assets/12.jpg"
-import Amd from "./assets/8.jpg"
-import PortfolioV4 from "./assets/10.jpg"
+import VouchifyApp from "./assets/1.jpg";
+import ARPorang from "./assets/AR.jpg";
+import PremApps from "./assets/15.jpg";
+import Koskuy from "./assets/12.jpg";
+import Amd from "./assets/8.jpg";
+import PortfolioV4 from "./assets/10.jpg";
 // import PortfolioV2 from "./assets/2.svg"
 // import PortfolioV1 from "./assets/6.svg"
 // import JsGame from "./assets/11.svg"
-
 
 // import Testimonial1 from "./assets/testimonial1.jpg";
 // import Testimonial2 from "./assets/testimonial2.jpg";
@@ -17,10 +16,10 @@ import PortfolioV4 from "./assets/10.jpg"
 
 import ReactLogo from "./assets/react-logo.svg";
 import UnityLogo from "./assets/unity2-logo.svg";
-import JsLogo from "./assets/js2-logo.svg"
-import PhpLogo from "./assets/php2-logo.svg"
-import SqlLogo from "./assets/sql-logo.svg"
-import CanvaLogo from "./assets/canva2-logo.svg"
+import JsLogo from "./assets/js2-logo.svg";
+import PhpLogo from "./assets/php2-logo.svg";
+import SqlLogo from "./assets/sql-logo.svg";
+import CanvaLogo from "./assets/canva2-logo.svg";
 
 export const links = [
   {
@@ -129,7 +128,7 @@ export const skills = [
   {
     id: 6,
     name: "Unity",
-    percentage: 50  ,
+    percentage: 50,
     logo: UnityLogo,
   },
 ];
@@ -153,19 +152,20 @@ export const projects = [
   },
   {
     id: 3,
-    img: PremApps,
-    category: "Branding",
-    title: "Premium Apps",
-    description:
-      "Selling various Premium Applications such as video streaming, music, design, editing, education, and more.",
-  },
-  {
-    id: 4,
     img: Koskuy,
     category: "Branding",
     title: "Koskuy",
     description:
       "Koskuy is a platform that manages and presents a list of boarding houses, particularly in the Madiun area.",
+  },
+
+  {
+    id: 4,
+    img: PremApps,
+    category: "Branding",
+    title: "Premium Apps",
+    description:
+      "Selling various Premium Applications such as video streaming, music, design, editing, education, and more.",
   },
 
   {
@@ -220,7 +220,8 @@ export const cv = [
     title: "Sebelas Maret University",
     subtitle: "Diploma Degree of Informatics Engineering",
     date: "2020 - 2023",
-    description: "Relevant Course works: Algorithms and Programming, Object-Oriented Programming, Database, Front End and Back End Programming Practices",
+    description:
+      "Relevant Course works: Algorithms and Programming, Object-Oriented Programming, Database, Front End and Back End Programming Practices",
     category: "education",
   },
 

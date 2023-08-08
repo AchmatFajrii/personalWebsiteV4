@@ -53,9 +53,17 @@ const Services = () => {
                 <h3 className="services__title">{title}</h3>
                 <p className="services__description">{description}</p>
 
-                <div className="home__btns" style={{position: 'relative', zIndex: '10'}}>
+                <div
+                  className="home__btns"
+                  style={{ position: "relative", zIndex: "10" }}
+                >
                   <a href="" className="btn text-cs">
-                  <span><span><BsChatDots/></span> Get in Touch</span>
+                    <span>
+                      <span>
+                        <BsChatDots />
+                      </span>{" "}
+                      Get in Touch
+                    </span>
                   </a>
                 </div>
 

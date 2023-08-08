@@ -56,6 +56,8 @@ function App() {
         <Contact />
         <Footer />
       </main>
+
+      
     </>
   );
 }
