@@ -1,16 +1,19 @@
 .home {
   background-image: var(--first-gradient);
   padding-bottom: 180px;
+  transition: all 0.3s ease;
 }
 .home,
 .home__wrapper .home__container {
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .home__wrapper {
   min-height: 100vh;
   display: grid;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .home__container {
@@ -27,6 +30,7 @@
 .home__job span {
   font-size: var(--small-font-size);
   color: var(--title-color);
+  transition: all 0.3s ease;
 }
 .home__subtitle span,
 .home__title span {
@@ -93,6 +97,7 @@
   right: 12px;
   width: 100%;
   max-width: 680px;
+  transition: all 0.3s ease;
 }
 
 .home__banner {
@@ -102,6 +107,7 @@
   border-bottom-right-radius: 50%;
   position: relative;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .home__profile {
@@ -112,6 +118,7 @@
   border-bottom-right-radius: 40%;
   /* border-radius: 500px; */
   object-fit: cover;
+  transition: all 0.3s ease;
 }
 
 .home__data {
@@ -126,11 +133,13 @@
   align-items: center;
   position: absolute;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .home__data-one {
   bottom: 20%;
   left: -4%;
+  
 }
 
 .home__data-two {

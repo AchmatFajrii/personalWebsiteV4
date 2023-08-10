@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleScroll = () => {
     const scrollThreshold = 200;
@@ -27,37 +28,54 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 2000);
+  }, []);
+
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <>
-      <main className="main">
-        {/* Add the 'show' class when 'showBackToTop' is true */}
-        <button
-          className={`back ${showBackToTop ? "show" : ""}`}
-          type="button"
-          onClick={handleBackToTop}
-        >
-          <img src={BackToTop} alt="" width="50px" />
-        </button>
-        <button className="wa" type="button">
-          <a href="https://wa.me/6285348439785" target="__blank">
-            <img src={Wa} alt="" width="50px" />
-          </a>
-        </button>
-        <Header />
-        <Home />
-        <Services />
-        <Skills />
-        <Portfolio />
-        <Resume />
-        <Contact />
-        <Footer />
-      </main>
-
-      
+      {loading ? (
+        <main className="main">
+          {/* Add the 'show' class when 'showBackToTop' is true */}
+          <button
+            className={`back ${showBackToTop ? "show" : ""}`}
+            type="button"
+            onClick={handleBackToTop}
+          >
+            <img src={BackToTop} alt="" width="50px" />
+          </button>
+          <button className="wa" type="button">
+            <a href="https://wa.me/6285348439785" target="__blank">
+              <img src={Wa} alt="" width="50px" />
+            </a>
+          </button>
+          <Header />
+          <Home />
+          <Services />
+          <Skills />
+          <Portfolio />
+          <Resume />
+          <Contact />
+          <Footer />
+        </main>
+      ) : (
+        <div className="circ-wrapper">
+          <div className="circ">
+            <div className="load">Loading . . . </div>
+            <div className="hands"></div>
+            <div className="body"></div>
+            <div className="head">
+              <div className="eye"></div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
