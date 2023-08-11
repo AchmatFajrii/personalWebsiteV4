@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import BackToTop from "./assets/top.svg";
 import Wa from "./assets/wa.svg";
+import Cursor from "./components/cursor/Cursor";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Services from "./components/services/Services";
@@ -34,6 +35,16 @@ function App() {
     }, 2000);
   }, []);
 
+  useEffect(() => {
+    const textElements = document.querySelectorAll('body *:not(script)'); // Memilih semua elemen di dalam <body> kecuali <script>
+
+    textElements.forEach((element) => {
+      element.addEventListener('click', () => {
+        element.classList.toggle('highlighted-text');
+      });
+    });
+  }, []);
+
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -55,6 +66,7 @@ function App() {
               <img src={Wa} alt="" width="50px" />
             </a>
           </button>
+          <Cursor/>
           <Header />
           <Home />
           <Services />
